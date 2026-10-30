@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a problem creating, checking, or importing a Doggo pack.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Reports are public. Do not include passwords, API keys, contact details, private photos, or unredacted screenshots."
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      placeholder: "For example, 1.0.0"
+  - type: input
+    id: environment
+    attributes:
+      label: App or browser
+      placeholder: "For example, ChatGPT web in Chrome"
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Include the steps, expected result, actual result, and exact error text.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Non-sensitive example (optional)
+      description: Share only material you are comfortable making public. Redact screenshots first.
